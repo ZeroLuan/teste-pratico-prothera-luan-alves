@@ -9,7 +9,7 @@ import java.util.Locale;
 
 public class FormatadorUtil {
 
-    private static final Locale LOCALE_BR = new Locale("pt", "BR");
+    private static final Locale LOCALE_BR = Locale.forLanguageTag("pt-BR");
     private static final DecimalFormatSymbols SIMBOLOS = new DecimalFormatSymbols(LOCALE_BR);
     private static final DecimalFormat FORMATO_MOEDA = new DecimalFormat("#,##0.00", SIMBOLOS);
     private static final DateTimeFormatter FORMATO_DATA = DateTimeFormatter.ofPattern("dd/MM/yyyy");
